@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #one{
+            max-width:100%;
+            height: 1150px;
+            background: linear-gradient(white,wheat);
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 0;
+        }
+        #img1{
+            margin: 20px;
+            width: 300px;
+            opacity: 300%;
+            height: 40px;
+        }
+        #para1{
+            margin: 0;
+            position: absolute;
+            left: 215px;
+            top: 67px;
+        }
+        #select1{
+            position: absolute;
+            top:40px;
+            width: 150px;
+            left: 860px;
+        }
+        #select2{
+            position: absolute;
+            top: 40px;
+            width: 100px;
+            left: 1020px;
+        }
+        #two{
+            position: absolute;
+            top: 40px;
+            left: 1145px;
+            width: 120px;
+            text-align: left;
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 16px;
+        }
+        #img2{
+            position: absolute;
+            top: 40px;
+            left: 1270px;
+        }
+        #ul1{
+            position: absolute;
+            top: 95px;
+            width: 1240px;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            height: 16px;
+        }
+
+        #li1{
+            list-style-type: none;
+            float: left;
+            height: 17px;
+            padding-top: 8px;
+            padding-left: 50px;
+            padding-right: 49px;
+            background-color: lightgray;
+        }
+        #li10{
+            list-style-type: none;
+            float: left;
+            height: 17px;
+            padding-top: 8px;
+            padding-left: 47px;
+            padding-right: 47px;
+            background-color: darkblue;
+            color: white;
+        }
+        #ul2{
+            position: absolute;
+            top: 130px;
+            width: 1240px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            text-decoration: none;
+            height: 24px;
+        }
+        #li2{
+            list-style-type: none;
+            float: left;
+            text-align: center;
+            padding-top: 8px;
+            padding-left: 70px;
+            padding-right: 90px;
+            height: 16px;
+        }
+        #li21{
+            list-style-type: none;
+            float: left;
+            height: 16px;
+            text-align: center;
+            padding-top: 8px ;
+            padding-left: 100px;
+            padding-right: 90px;
+            background-color: lightskyblue;
+            color: blue;
+        }
+        #li22{
+            list-style-type: none;
+            float: left;
+            height: 16px;
+            text-align: center;
+            padding-top: 8px;
+            padding-left: 70px;
+            padding-right: 90px;
+            background-color: blue;
+            color: white;
+        }
+        #img3{
+            position: absolute;
+            z-index: 1;
+            top: 130px;
+            left: 275px;
+            width: 15px;
+            height: 24px;
+        }
+        #img4{
+            position: absolute;
+            z-index: 1;
+            top:130px;
+            left:670px;
+            width: 15px;
+            height: 24px;
+        }
+        #white1{
+            position: relative;
+            top: 90px;
+            width: 840px;
+            height: 90px;
+            background-color: white;
+
+        }
+        #gray1{
+            position: relative;
+            top:90px;
+            width: 840px;
+            height: 90px;
+            background-color: lightgray;
+            margin: 0;
+        }
+        #white2{
+            position: relative;
+            top: 90px;
+            width: 840px;
+            height: 90px;
+            background-color: white;
+        }
+        #gray2{
+            position: relative;
+            top:90px;
+            width: 840px;
+            height: 90px;
+            background-color: lightgray;
+            margin: 0;
+        }
+        #white3{
+            position: relative;
+            top: 90px;
+            width: 840px;
+            height: 90px;
+            background-color: white;
+        }
+        #gray3{
+            position: relative;
+            top:90px;
+            width: 840px;
+            height: 90px;
+            background-color: lightgray;
+            margin: 0;
+        }
+        #white4{
+            position: relative;
+            top: 90px;
+            width: 840px;
+            height: 90px;
+            background-color: white;
+        }
+        #box1{
+            position: relative;
+            top: 5px;
+            left: 0;
+            text-align: center;
+            padding: 0;
+            width: 180px;
+            height: 90px;
+        }
+        #boldbox{
+            position: absolute;
+            top: 0;
+            left: 70px;
+            font-size: 20px;
+        }
+        #selectbox{
+            background-color: blue;
+            position: absolute;
+            top: 35px;
+            left: 50px;
+            width: 80px;
+            height: 14px;
+            color: white;
+            font-size: 12px;
+            padding-top: 8px;
+        }
+        #para2{
+            font-size: 15px;
+            margin: 0;
+            padding:0;
+        }
+        #smallbox{
+            position: absolute;
+            top:45px;
+            left: 50px;
+            font-size: 12px;
+        }
+        #box2{
+            position: absolute;
+            left: 180px;
+            top: 5px;
+            text-align: center;
+            padding: 0;
+            width: 220px;
+            height: 90px;
+        }
+        #imgbox{
+            height: 60px;
+            width: 140px;
+        }
+        #textBox2{
+            position: absolute;
+            top:58px;
+            left:80px;
+            font-size: 12px;
+        }
+        #box3{
+            position: absolute;
+            left: 400px;
+            top: 5px;
+            padding: 0;
+            margin: 0;
+            width: 250px;
+            height: 90px;
+        }
+        #txtBox3one{
+            position:absolute;
+            top: 0;
+            left: 30px;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            width: 180px;
+            height: 14px;
+        }
+        #txtBox3two{
+            position:absolute;
+            top: 17px;
+            left: 30px;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            width: 180px;
+            height: 14px;
+        }
+        #txtBox3three{
+            position:absolute;
+            top: 34px;
+            left: 30px;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            width: 180px;
+            height: 14px;
+        }
+        #imgbox3one{
+            position: absolute;
+            top: 0;
+            float: right;
+            left:10px;
+            width: 60px;
+            height: 14px;
+            padding: 0;
+            margin: 0;
+        }
+        #imgbox3two{
+            position: absolute;
+            float: right;
+            top: 17px;
+            left: 5px;
+            width: 60px;
+            height: 14px;
+            padding: 0;
+            margin: 0;
+        }
+        #imgbox3three{
+            position: absolute;
+            float: right;
+            top: 34px;
+            left:0;
+            width: 60px;
+            height: 14px;
+            padding: 0;
+            margin: 0;
+        }
+        #box4{
+            text-align: left;
+            position: absolute;
+            right: 0;
+            top:5px;
+            font-size: 15px;
+            width: 240px;
+        }
+        #box5{
+            position: absolute;
+            left: 888px;
+            top: 182px;
+            padding: 10px;
+            background-color: lightcyan;
+            width: 380px;
+            height: 280px;
+            font-size: 15px;
+        }
+        #imgA{
+            position: absolute;
+            left: 888px;
+            top: 482px;
+            width: 400px;
+            height: 240px;
+        }
+        #para4{
+            margin-bottom:2px;
+            font-size: 14px;
+        }
+        #box6{
+            position: relative;
+            top: 160px;
+            width: 1220px;
+            height: 230px;
+            background-color: lightcyan;
+            padding: 20px;
+            border-bottom: 5px solid blue;
+        }
+        label{
+            font-size: 20px;
+        }
+        #submitbox{
+            background-color: blue;
+            position: absolute;
+            top: 38px;
+            left: 240px;
+            width: 80px;
+            height: 13px;
+            color: white;
+            font-size: 12px;
+            padding-top: 8px;
+            text-align: center;
+        }
+        #logofb{
+            position: absolute;
+            top:70px;
+            left: 60px;
+        }
+        #logotw{
+            position: absolute;
+            top:70px;
+            left: 100px;
+        }
+        #logoyt{
+            position: absolute;
+            top:70px;
+            left: 140px;
+        }
+        #logop{
+            position: absolute;
+            top: 120px;
+            left: 20px;
+
+        }
+        #txtdiv{
+            position: absolute;
+            top: 123px;
+            left: 50px;
+            color: blue;
+            font-size: 15px;
+        }
+        #list1{
+            position: absolute;
+            top: 20px;
+            left: 340px;
+            list-style-type: none;
+            color: blue;
+            border-left: 2px solid white;
+            padding-left: 20px;
+        }
+        #list2{
+            position: absolute;
+            top: 20px;
+            left: 570px;
+            list-style-type: none;
+            color: blue;
+            border-left: 2px solid white;
+            padding-left: 20px;
+        }
+        #list3{
+            position: absolute;
+            top: 20px;
+            left: 860px;
+            list-style-type: none;
+            color: blue;
+            border-left: 2px solid white;
+            padding-left: 20px;
+        }
+        #lastDiv{
+            position: absolute;
+            top:200px;
+            left:70px;
+            font-size: 16px;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="one">
+    <img id="img1" src="adv_logo_hd.gif">
+    <p id="para1">RENT A CAR</p>
+    <select id="select1">
+        <option>United States</option>
+        <option>India</option>
+    </select>
+    <select id="select2">
+        <option>English</option>
+        <option>Gujarati</option>
+    </select>
+    <div id="two">Search</div>
+    <img id="img2" src="search_btn.gif">
+    <div >
+        <ul id="ul1">
+            <li id="li10">RATES & RESERVATIONS</a></li>
+            <li id="li1">A PASS ONLINE CHECK-IN</li>
+            <li id="li1">FIND A LOCATION</li>
+            <li id="li1">DEALS & OFFERS</li>
+            <li id="li1">CONTACT US</li>
+        </ul>
+    </div>
+    <div style="vertical-align: bottom">
+        <ul id="ul2">
+            <li id="li21">STEP 1</li>
+            <li id="li22">2 SELECT VEHICLES & EXTRAS</li>
+            <li id="li2">STEP 3</li>
+            <li id="li2">STEP 4</li>
+        </ul>
+    </div>
+    <img id="img3" src="resStepDividerPrevious.gif">
+    <img id="img4" src="resStepDividerActive.gif">
+    <div id="white1">
+        <div id="box1">
+            <div id="boldbox"><b>10.99</b></div>
+            <br>
+            <p id="para2">USD/DAY</p>
+            <br>
+            <div id="selectbox">SELECT</div>
+            <br>
+            <p id="smallbox">Total 76.93 USD</p>
+        </div>
+        <div id="box2">
+            <img id="imgbox" src="car1.jpg">
+            <br>
+            <div id="textBox2"><b>Extra Small Car</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="gray1">
+        <div id="box1">
+            <div id="boldbox"><b>10.99</b></div>
+            <br>
+            <p id="para2">USD/DAY</p>
+            <br>
+            <div id="selectbox">SELECT</div>
+            <br>
+            <p id="smallbox">Total 76.93 USD</p>
+        </div>
+        <div id="box2">
+            <img id="imgbox" src="car2.jpg">
+            <br>
+            <div id="textBox2"><b>Small Car</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="white2">
+        <div id="box1">
+            <div id="boldbox"><b>10.99</b></div>
+            <br>
+            <p id="para2">USD/DAY</p>
+            <br>
+            <div id="selectbox">SELECT</div>
+            <br>
+            <p id="smallbox">Total 76.93 USD</p>
+        </div>
+        <div id="box2">
+            <img id="imgbox" src="car3.jpg">
+            <br>
+            <div id="textBox2"><b>Medium Car</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="gray2">
+        <div id="box1">
+            <div id="boldbox"><b>10.99</b></div>
+            <br>
+            <p id="para2">USD/DAY</p>
+            <br>
+            <div id="selectbox">SELECT</div>
+            <br>
+            <p id="smallbox">Total 76.93 USD</p>
+        </div>
+        <div id="box2">
+            <img id="imgbox" src="car4.jpg">
+            <br>
+            <div id="textBox2"><b>Large Car</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="white3"><div id="box1">
+        <div id="boldbox"><b>10.99</b></div>
+        <br>
+        <p id="para2">USD/DAY</p>
+        <br>
+        <div id="selectbox">SELECT</div>
+        <br>
+        <p id="smallbox">Total 76.93 USD</p>
+    </div>
+        <div id="box2">
+            <img id="imgbox" src="car5.jpg">
+            <br>
+            <div id="textBox2"><b>Small SUV</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="gray3">
+        <div id="box1">
+            <div id="boldbox"><b>10.99</b></div>
+            <br>
+            <p id="para2">USD/DAY</p>
+            <br>
+            <div id="selectbox">SELECT</div>
+            <br>
+            <p id="smallbox">Total 76.93 USD</p>
+        </div>
+        <div id="box2">
+            <img id="imgbox" src="car6.jpg">
+            <br>
+            <div id="textBox2"><b>Medium SUV</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="white4">
+        <div id="box1">
+            <div id="boldbox"><b>10.99</b></div>
+            <br>
+            <p id="para2">USD/DAY</p>
+            <br>
+            <div id="selectbox">SELECT</div>
+            <br>
+            <p id="smallbox">Total 76.93 USD</p>
+        </div>
+        <div id="box2">
+            <img id="imgbox" src="car7.jpg">
+            <br>
+            <div id="textBox2"><b>Minivan</b></div>
+        </div>
+        <div id="box3">
+            <div id="imgbox3one"><img src="icon_man.gif"></div>
+            <div id="txtBox3one"> x 4 Passengers</div>
+            <br>
+            <div id="imgbox3two"><img src="icon_sm_scase.gif"></div>
+            <div id="txtBox3two"> x 2 Small Suitcases</div>
+            <br>
+            <div id="imgbox3three"><img src="icon_lg_scase.gif">
+            </div><div id="txtBox3three"> x 0 Large Suitcases</div>
+        </div>
+        <div id="box4">
+            Automatic Transmission
+            <br>
+            Air Conditioning
+            <br>
+            24 miles/gallon
+        </div>
+    </div>
+    <div id="box5">
+        <h3><b>YOUR ITINERARY</b>  <span style="color: blue; font-size: 16px; float: right">Change Itinerary</span></h3>
+        <p id="para4"><b>Pick Up</b><br>Street address<br>city<br>zip code, state</p>
+        <p id="para4"><b>Return</b><br>Street address<br>city<br>zip code, state</p>
+        <p id="para4"><b>Pick Up date</b><br>Date</p>
+        <p id="para4"><b>Return date</b><br>Date</p>
+    </div>
+    <div>
+        <img id="imgA" src="offer.gif">
+    </div>
+    <div id="box6">
+        <label style="font-size: 16px">STAY CONNECTED</label><br>
+        <input style="width: 210px;" type="text" value="Sign Up For Emails">
+        <div id="submitbox">SUBMIT</div>
+        <img id="logofb" src="facebook.png">
+        <img id="logotw" src="twitter.png">
+        <img id="logoyt" src="youtube.png">
+        <img id="logop" src="phoneIcon.png">
+        <div id="txtdiv">Advantage Rent A Car Mobile</div>
+        <ul id="list1">
+            <li><b>Rates & Reservations</b></li>
+            <li>Get a Quote</li>
+            <li>Modify/Cancel</li>
+            <li>Review</li>
+            <li><br></li>
+            <li><b>A-PASS Online Check-In</b></li>
+            <li><br></li>
+            <li><b>Find a Location</b></li>
+        </ul>
+        <ul id="list2">
+            <li><b>Deals & Offers</b></li>
+            <li><br></li>
+            <li><b>Contact Us</b></li>
+            <li><br></li>
+            <li><b>Customer Support</b></li>
+            <li>FAQs</li>
+            <li>Request a Receipt</li>
+            <li>Rental Qualifications/ Requirements</li>
+        </ul>
+        <ul id="list3">
+            <li>Careers</li>
+            <li>Privacy Policy</li>
+            <li>Travel Agent Login</li>
+            <li>Site Map</li>
+            <li>Business Travel</li>
+            <li>Accident Report</li>
+            <li><br></li>
+            <li><br></li>
+        </ul>
+        <p id="lastDiv">Reg US PAT OFF @copy 2010 Simply Wheels LLC Advantage Rent A Car Is a Registered trademark of Simpley wheel... all rights reserved.....</p>
+    </div>
+
+
+</div>
+
+</body>
+</html>
